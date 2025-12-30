@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍴 Fast Food Classification 🍴</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="file" class="file-label">Choose an Image</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+
+        <!-- Upload Feedback -->
+        {% if upload_feedback %}
+        <p class="upload-feedback">{{ upload_feedback }}</p>
+        {% endif %}
+
+        <!-- Display uploaded image and prediction -->
+        {% if uploaded_image %}
+        <div class="result">
+            <h2>Done Uploading ✅</h2>
+            <img src="{{ uploaded_image }}" alt="Uploaded Food" class="uploaded-img">
+            <h3>Prediction: {{ prediction }}</h3>
+            <p>Confidence: {{ confidence }}%</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

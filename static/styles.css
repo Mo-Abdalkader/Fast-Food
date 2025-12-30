@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* File Upload Label */
+.file-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* File Input */
+input[type="file"] {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type="file"]:hover {
+    border-color: #ff6b6b;
+    background-color: #fff;
+}
+
+/* Submit Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+/* Feedback Message */
+.upload-feedback {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+}
+
+/* Success Feedback */
+.upload-feedback.success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Error Feedback */
+.upload-feedback.error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Result Section */
+.result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.result h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.result p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Uploaded Image */
+.uploaded-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
