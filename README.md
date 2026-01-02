@@ -604,3 +604,4 @@ If you find this project useful, please consider giving it a ⭐ on GitHub! It h
 **Made with ❤️ and 🍕 by Mohamed Abdalkader**
 
 *Enjoy classifying your fast food! 🍔🎉*
+
